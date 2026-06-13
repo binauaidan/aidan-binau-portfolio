@@ -1,0 +1,44 @@
+{
+  "_readme": "AIDAN BINAU — Final Content | Accurate Descriptions",
+  "hero": {
+    "slides": [
+      { "file": "images/hero/Landscape-1.webp", "alt": "Dramatic black and white mountain landscape in heavy mist" },
+      { "file": "images/hero/Landscape-2.webp", "alt": "Italian Dolomites" },
+      { "file": "images/hero/Landscape-3.webp", "alt": "Milky Way over sharp mountain ridges" }
+    ],
+    "interval": 6500
+  },
+  "about": {
+    "portrait": "images/about/portrait.webp",
+    "behind_scenes": "images/about/behind-scenes.webp"
+  },
+  "portfolio": [
+    { "id": "ls-001", "category": "landscape", "file": "images/portfolio/landscape/Landscape-1.webp", "aspectRatio": "wide", "featured": true },
+    { "id": "ls-002", "category": "landscape", "file": "images/portfolio/landscape/Landscape-2.webp", "aspectRatio": "portrait", "featured": true },
+    { "id": "ls-003", "category": "landscape", "file": "images/portfolio/landscape/Landscape-3.webp", "aspectRatio": "wide", "featured": true },
+    { "id": "ls-004", "category": "landscape", "file": "images/portfolio/landscape/Landscape-4.webp", "aspectRatio": "wide", "featured": false },
+    { "id": "ls-005", "category": "landscape", "file": "images/portfolio/landscape/Landscape-5.webp", "aspectRatio": "wide", "featured": false },
+    { "id": "ls-006", "category": "landscape", "file": "images/portfolio/landscape/Landscape-6.webp", "aspectRatio": "portrait", "featured": false },
+    { "id": "ls-007", "category": "landscape", "file": "images/portfolio/landscape/Landscape-7.webp", "aspectRatio": "wide", "featured": false },
+    { "id": "ls-008", "category": "landscape", "file": "images/portfolio/landscape/Landscape-8.webp", "aspectRatio": "portrait", "featured": false },
+    { "id": "ls-009", "category": "landscape", "file": "images/portfolio/landscape/Landscape-9.webp", "aspectRatio": "wide", "featured": false },
+    { "id": "ls-010", "category": "landscape", "file": "images/portfolio/landscape/Landscape-10.webp", "aspectRatio": "wide", "featured": false },
+    { "id": "ls-011", "category": "landscape", "file": "images/portfolio/landscape/Landscape-11.webp", "aspectRatio": "wide", "featured": false },
+    { "id": "ls-013", "category": "landscape", "file": "images/portfolio/landscape/Landscape-13.webp", "aspectRatio": "wide", "featured": false },
+    { "id": "ls-014", "category": "landscape", "file": "images/portfolio/landscape/Landscape-14.webp", "aspectRatio": "wide", "featured": false },
+    { "id": "ls-015", "category": "landscape", "file": "images/portfolio/landscape/Landscape-15.webp", "aspectRatio": "wide", "featured": true },
+    { "id": "ls-016", "category": "landscape", "file": "images/portfolio/landscape/Landscape-16.webp", "aspectRatio": "wide", "featured": false },
+    { "id": "wl-001", "category": "wildlife", "file": "images/portfolio/wildlife/Wildlife-1.webp", "aspectRatio": "portrait", "featured": true },
+    { "id": "wl-002", "category": "wildlife", "file": "images/portfolio/wildlife/Wildlife-2.webp", "aspectRatio": "square", "featured": true },
+    { "id": "wl-003", "category": "wildlife", "file": "images/portfolio/wildlife/Wildlife-3.webp", "aspectRatio": "square", "featured": true },
+    { "id": "wl-004", "category": "wildlife", "file": "images/portfolio/wildlife/Wildlife-4.webp", "aspectRatio": "portrait", "featured": false },
+    { "id": "wl-005", "category": "wildlife", "file": "images/portfolio/wildlife/Wildlife-5.webp", "aspectRatio": "square", "featured": false },
+    { "id": "pt-001", "category": "portraits", "file": "images/portfolio/portraits/Portrait-1.webp", "aspectRatio": "portrait", "featured": true },
+    { "id": "pt-002", "category": "portraits", "file": "images/portfolio/portraits/Portrait-2.webp", "aspectRatio": "portrait", "featured": true },
+    { "id": "pt-003", "category": "portraits", "file": "images/portfolio/portraits/Portrait-3.webp", "aspectRatio": "portrait", "featured": true },
+    { "id": "pt-004", "category": "portraits", "file": "images/portfolio/portraits/Portrait-4.webp", "aspectRatio": "portrait", "featured": false },
+    { "id": "pt-005", "category": "portraits", "file": "images/portfolio/portraits/Portrait-5.webp", "aspectRatio": "portrait", "featured": false },
+    { "id": "pt-006", "category": "portraits", "file": "images/portfolio/portraits/Portrait-6.webp", "aspectRatio": "portrait", "featured": false },
+    { "id": "pt-007", "category": "portraits", "file": "images/portfolio/portraits/Portrait-7.webp", "aspectRatio": "portrait", "featured": true }
+  ]
+}
