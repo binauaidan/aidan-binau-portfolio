@@ -581,10 +581,6 @@ nav.scrolled {
   object-position: center 25%;
 }
 
-.photo-item:hover img {
-  transform: scale(1.08);
-}
-
 .photo-overlay {
   position: absolute;
   inset: 0;
