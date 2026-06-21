@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+  <title>Aidan Binau — Cinematic Photographer</title>
+  <meta name="description" content="Aidan Binau — Cinematic photographer specializing in wild landscapes, honest wildlife encounters, and intimate human moments. Based in Bellingham, Washington. Available worldwide.">
+  <meta name="keywords" content="PNW photographer, Bellingham photographer, landscape photography, wildlife photography, wedding photographer, engagement photographer, Washington state photography, Pacific Northwest photography, cinematic photographer">
+  <meta name="author" content="Aidan Binau">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Aidan Binau — Cinematic Photographer">
+  <meta property="og:description" content="Cinematic photography of wild landscapes, honest wildlife encounters, and intimate human moments — created across the Pacific Northwest and destinations worldwide.">
+  <meta property="og:image" content="images/hero/Landscape-1.webp">
+  <meta property="og:url" content="https://aidanbinau.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Aidan Binau — Cinematic Photographer">
+  <meta name="twitter:description" content="Cinematic photography of wild landscapes, honest wildlife encounters, and intimate human moments — created across the Pacific Northwest and destinations worldwide.">
+  <meta name="twitter:image" content="images/hero/Landscape-1.webp">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;family=Barlow:wght@300;400;500&amp;family=Barlow+Condensed:wght@400;500;600&amp;display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📷</text></svg>">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader" role="status" aria-live="polite" aria-label="Loading">
+    <div class="pre-wordmark">Aidan Binau</div>
+    <div class="pre-tag">Cinematic Photography</div>
+    <div class="pre-bar-wrap"><div class="pre-bar"></div></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="nav" role="navigation" aria-label="Main navigation">
+    <a class="nav-brand" href="#hero" data-scroll="#hero" aria-label="Aidan Binau — Home">
+      Aidan <span>Binau</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#portfolio" data-scroll="#portfolio" aria-label="Work">Work</a></li>
+      <li><a href="#about"     data-scroll="#about"     aria-label="About">About</a></li>
+      <li><a href="#contact"   data-scroll="#contact"   aria-label="Contact">Contact</a></li>
+      <li><a class="nav-cta" href="#contact" data-scroll="#contact" aria-label="Book a session">Book a Session</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <nav class="nav-mobile-menu" role="navigation" aria-label="Mobile navigation">
+    <a href="#portfolio" data-scroll="#portfolio">Work</a>
+    <a href="#about" data-scroll="#about">About</a>
+    <a href="#contact" data-scroll="#contact">Contact</a>
+    <a href="#contact" data-scroll="#contact" style="color:var(--gold)">Book a Session</a>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" aria-label="Welcome">
+    <div class="hero-slides" aria-hidden="true"></div>
+    <div class="hero-vignette" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <p class="hero-eyebrow reveal">Pacific Northwest · Bellingham, WA</p>
+      <h1 class="hero-title reveal reveal-delay-1">
+        Raw<br><em>Horizon</em>
+      </h1>
+      <p class="hero-sub reveal reveal-delay-2">
+        Cinematic photography of wild landscapes, honest wildlife encounters, and intimate human moments — created across the Pacific Northwest and destinations worldwide.
+      </p>
+      <div class="hero-actions reveal reveal-delay-3">
+        <button class="btn-primary" data-scroll="#portfolio" aria-label="View work">
+          View Work
+        </button>
+        <button class="btn-ghost" data-scroll="#contact" aria-label="Book a session">
+          Book a Session
+        </button>
+      </div>
+    </div>
+
+    <div class="hero-indicators" aria-hidden="true"></div>
+
+    <div class="scroll-hint" aria-hidden="true">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" aria-label="Portfolio">
+    <div class="portfolio-inner">
+
+      <div class="portfolio-head">
+        <div class="portfolio-head-left">
+          <h2 class="section-title reveal reveal-delay-1">
+            Selected <em>Work</em>
+          </h2>
+          <p class="portfolio-head-desc reveal reveal-delay-2">
+            Three pillars. One vision. Raw landscapes, honest wildlife encounters, and intimate human moments captured with precision and feeling.
+          </p>
+        </div>
+
+        <div class="filter-tabs reveal reveal-delay-2" role="tablist" aria-label="Filter portfolio by category">
+          <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-tab" data-filter="landscape" role="tab" aria-selected="false">Landscapes</button>
+          <button class="filter-tab" data-filter="wildlife" role="tab" aria-selected="false">Wildlife</button>
+          <button class="filter-tab" data-filter="portraits" role="tab" aria-selected="false">Portraits</button>
+        </div>
+      </div>
+
+      <!-- Dynamic Grid from manifest.json -->
+      <div class="photo-grid" id="photo-grid" aria-label="Photo gallery">
+        <!-- Populated by JS -->
+      </div>
+
+      <div class="load-more-wrap reveal">
+        <button class="btn-ghost" id="loadMoreBtn" aria-label="Request full gallery">
+          Request Full Gallery
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" aria-label="About Aidan Binau">
+    <div class="about-inner">
+
+      <div class="about-images reveal">
+        <div class="about-img-main">
+          <img src="images/about/behind-scenes.webp" 
+               onerror="this.parentNode.innerHTML='<div class=\'photo-placeholder\' style=\'height:100%; background:var(--surface-2); display:flex; align-items:center; justify-content:center; color:var(--text-dim)\'><div style=\'text-align:center\'><div style=\'font-size:3rem; margin-bottom:0.5rem\'>🌲</div><div>Behind the Lens</div></div></div>'"
+               alt="Aidan Binau working in the Pacific Northwest wilderness" loading="lazy">
+        </div>
+        <div class="about-img-sec">
+          <img src="images/about/portrait.webp" 
+               onerror="this.parentNode.innerHTML='<div class=\'photo-placeholder\' style=\'height:100%; background:var(--surface-2); display:flex; align-items:center; justify-content:center; color:var(--text-dim)\'><div style=\'text-align:center\'><div style=\'font-size:3rem; margin-bottom:0.5rem\'>📷</div><div>Portrait</div></div></div>'"
+               alt="Portrait of Aidan Binau, Pacific Northwest photographer" loading="lazy">
+        </div>
+        <div class="about-img-accent">
+          <div style="font-size:0.95rem; letter-spacing:0.05em;">Based in</div>
+          <div style="font-size:1.35rem; font-weight:600; margin:0.2rem 0;">Bellingham, WA</div>
+          <div style="font-size:0.8rem; opacity:0.85;">Pacific Northwest</div>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <h2 class="section-title reveal reveal-delay-1">About <em>Aidan</em></h2>
+
+        <p class="about-body reveal reveal-delay-2">
+          I’m a Pacific Northwest photographer drawn to the tension between stillness and power — the moment a storm breaks over a ridgeline, the quiet intensity of a wild animal, the unguarded truth between two people.
+        </p>
+        <p class="about-body reveal reveal-delay-3">
+          Rooted in Bellingham, Washington, I work across the full breadth of the PNW and travel wherever the story demands. My approach blends technical precision with instinct for light, timing, and presence.
+        </p>
+
+        <div class="about-services reveal reveal-delay-4">
+          <div class="about-service-item">
+            <span class="about-service-icon" aria-hidden="true">🏔</span>
+            <span>Wild Landscapes</span>
+          </div>
+          <div class="about-service-item">
+            <span class="about-service-icon" aria-hidden="true">🦅</span>
+            <span>Wildlife Encounters</span>
+          </div>
+          <div class="about-service-item">
+            <span class="about-service-icon" aria-hidden="true">💍</span>
+            <span>Portraits</span>
+          </div>
+          <div class="about-service-item">
+            <span class="about-service-icon" aria-hidden="true">🎬</span>
+            <span>Selective Videography</span>
+          </div>
+          <div class="about-service-item">
+            <span class="about-service-icon" aria-hidden="true">📄</span>
+            <span>Editorial &amp; Commercial</span>
+          </div>
+          <div class="about-service-item">
+            <span class="about-service-icon" aria-hidden="true">🌐</span>
+            <span>Image Licensing</span>
+          </div>
+        </div>
+
+        <div class="about-meta reveal">
+          <div class="about-meta-item">
+            <div class="about-meta-label">Base</div>
+            <div class="about-meta-value">Bellingham, WA</div>
+          </div>
+          <div class="about-meta-item">
+            <div class="about-meta-label">Availability</div>
+            <div class="about-meta-value">Worldwide</div>
+          </div>
+          <div class="about-meta-item">
+            <div class="about-meta-label">Camera</div>
+            <div class="about-meta-value">Sony Alpha Series</div>
+          </div>
+        </div>
+
+        <div style="margin-top:2.25rem" class="reveal">
+          <a class="btn-primary" href="#contact" data-scroll="#contact" style="display:inline-block">
+            Work Together
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" aria-label="Contact and bookings">
+    <div class="contact-inner">
+
+      <div class="contact-info">
+        <h2 class="section-title reveal reveal-delay-1">
+          Start a <em>Conversation</em>
+        </h2>
+        <p class="about-body reveal reveal-delay-2" style="max-width:380px">
+          Whether you're planning a wedding, looking to license work, or want to collaborate on something meaningful — I'd love to hear from you.
+        </p>
+
+        <div class="contact-detail reveal reveal-delay-3">
+          <div class="contact-detail-item">
+            <span class="contact-detail-icon" aria-hidden="true">✉</span>
+            <div>
+              <div class="contact-detail-label">Email</div>
+              <a class="contact-detail-value" href="mailto:binauaidan@gmail.com">binauaidan@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <span class="contact-detail-icon" aria-hidden="true">📍</span>
+            <div>
+              <div class="contact-detail-label">Base</div>
+              <div class="contact-detail-value">Bellingham, WA — Available Worldwide</div>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <span class="contact-detail-icon" aria-hidden="true">⏱</span>
+            <div>
+              <div class="contact-detail-label">Response Time</div>
+              <div class="contact-detail-value">Within 24–48 hours</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <!-- 
+        FORMSPREE SETUP:
+        1. Go to https://formspree.io → Sign up (free)
+        2. Create a new form → Copy the endpoint (e.g. https://formspree.io/f/abc123xy)
+        3. Replace "YOUR_FORMSPREE_ID" below with your form hash (abc123xy)
+        4. (Recommended) In Formspree dashboard: Enable email notifications + add a friendly autoresponse.
+      -->
+      <div class="contact-form reveal reveal-delay-2">
+        <form id="contactForm" method="POST" action="https://formspree.io/f/mojoaprq" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label class="form-label" for="name">Your Name</label>
+              <input class="form-input" id="name" name="name" type="text" placeholder="Jane Smith" required autocomplete="name">
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="email">Email Address</label>
+              <input class="form-input" id="email" name="email" type="email" placeholder="jane@email.com" required autocomplete="email">
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="subject">Session Type</label>
+            <select class="form-select" id="subject" name="subject">
+              <option value="" disabled selected>Select a category…</option>
+              <option value="Wedding / Elopement">Wedding / Elopement</option>
+              <option value="Engagement Session">Engagement Session</option>
+              <option value="Landscape Commission">Landscape Commission</option>
+              <option value="Wildlife">Wildlife Session</option>
+              <option value="Editorial / Commercial">Editorial / Commercial</option>
+              <option value="Image Licensing">Image Licensing</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="date">Preferred Date (if applicable)</label>
+            <input class="form-input" id="date" name="date" type="text" placeholder="August 2026, or flexible…">
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="message">Tell Me About Your Vision</label>
+            <textarea class="form-textarea" id="message" name="message" rows="5" placeholder="Where, when, and what matters most to you…" required></textarea>
+          </div>
+
+          <button class="btn-primary" type="submit" style="width:100%; justify-content:center">
+            Send Message
+          </button>
+
+          <p style="font-size:0.72rem; color:var(--text-faint); text-align:center; margin-top:0.9rem; font-family:var(--font-condensed); letter-spacing:0.08em">
+            Your information is never shared or sold.
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">Aidan Binau · Photography</div>
+      <div class="footer-copy">
+        © <span id="year"></span> Aidan Binau. All rights reserved.
+      </div>
+      <div class="footer-socials">
+        <a href="mailto:binauaidan@gmail.com" aria-label="Email">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Photo lightbox" aria-hidden="true">
+    <div class="lb-wrap">
+      <button class="lb-close" aria-label="Close lightbox">✕</button>
+      <button class="lb-nav lb-prev" aria-label="Previous photo">‹</button>
+      <button class="lb-nav lb-next" aria-label="Next photo">›</button>
+
+      <div class="lb-img-wrap">
+        <!-- Image injected by JS -->
+      </div>
+
+      <div class="lb-strip" role="list" aria-label="Photo thumbnails">
+        <!-- Thumbs injected by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast-region" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+
+  <!-- Inline handler for Load More -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const btn = document.getElementById('loadMoreBtn');
+      if (btn) {
+        btn.addEventListener('click', () => {
+          window.location.href = 'mailto:binauaidan@gmail.com?subject=Full%20Gallery%20Request&body=Hi%20Aidan%2C%20I%27d%20love%20to%20see%20more%20of%20your%20work.';
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>

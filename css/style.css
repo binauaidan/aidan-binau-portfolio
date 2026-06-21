@@ -218,8 +218,19 @@ nav.scrolled {
   gap: 5px;
   background: none;
   border: none;
-  padding: 8px;
+  padding: 12px;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nav-hamburger:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 
 .nav-hamburger span {
