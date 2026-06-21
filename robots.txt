@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://aidanbinauphotography.com/sitemap.xml
+
+# Block common unwanted paths if any
+Disallow: /css/
+Disallow: /js/
+Disallow: /*.json$
