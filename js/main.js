@@ -17,13 +17,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ── Image Protection (Right-click + Drag) ─────────────
-  const protectedImages = document.querySelectorAll('.photo-item img, .about-img-main img, .about-img-sec img');
-  protectedImages.forEach(img => {
+  function protectImage(img) {
+    if (!img) return;
     img.addEventListener('contextmenu', e => e.preventDefault());
     img.setAttribute('draggable', 'false');
     img.style.userSelect = 'none';
     img.style.webkitUserSelect = 'none';
-  });
+  }
+
+  // Protect existing images on page load
+  document.querySelectorAll('.photo-item img, .about-img-main img, .about-img-sec img').forEach(protectImage);
 
   // ── Navbar Scroll Effect ──────────────────────────────
   const nav = document.getElementById('nav');
@@ -410,6 +413,9 @@ function renderLightboxImage(container, item) {
   img.alt = item.title || item.description || 'Full size photograph';
   
   container.appendChild(img);
+
+  // Protect the lightbox image from right-click
+  protectImage(img);
 
   // Elegant Watermark (appears in lightbox)
   const watermark = document.createElement('div');
