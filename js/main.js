@@ -19,10 +19,18 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── Image Protection (Right-click + Drag) ─────────────
   function protectImage(img) {
     if (!img) return;
-    img.addEventListener('contextmenu', e => e.preventDefault());
+
+    // Disable right-click context menu
+    img.addEventListener('contextmenu', e => e.preventDefault(), { passive: false });
+
+    // Disable dragging
+    img.addEventListener('dragstart', e => e.preventDefault());
     img.setAttribute('draggable', 'false');
+
+    // Disable text selection
     img.style.userSelect = 'none';
     img.style.webkitUserSelect = 'none';
+    img.style.msUserSelect = 'none';
   }
 
   // Protect existing images on page load
