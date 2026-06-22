@@ -573,6 +573,10 @@ nav.scrolled {
   object-position: center 25%;
 }
 
+.photo-item[data-id="pt-003"] img {
+  object-position: center 20%;
+}
+
 .photo-item[data-id="pt-006"] img {
   object-position: center 80%;
 }
