@@ -758,13 +758,14 @@ nav.scrolled {
 
 .about-images {
   position: relative;
+  align-self: stretch;
 }
 
 .about-img-main {
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow-soft);
-  aspect-ratio: 4/3;
+  aspect-ratio: 16 / 10;
 }
 
 .about-img-main img {
