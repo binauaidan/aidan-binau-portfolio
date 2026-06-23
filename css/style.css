@@ -759,13 +759,14 @@ nav.scrolled {
 .about-images {
   position: relative;
   align-self: stretch;
+  min-height: 420px;
 }
 
 .about-img-main {
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow-soft);
-  aspect-ratio: 16 / 10;
+  min-height: 420px;
 }
 
 .about-img-main img {
@@ -776,13 +777,13 @@ nav.scrolled {
 
 .about-img-sec {
   position: absolute;
-  bottom: -1.65rem;
-  right: -1.65rem;
-  width: 43%;
+  bottom: -1.8rem;
+  right: -1.5rem;
+  width: 46%;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow-soft);
-  border: 9px solid var(--bg);
+  border: 8px solid var(--bg);
   aspect-ratio: 3/4;
 }
 
