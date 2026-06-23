@@ -1029,7 +1029,7 @@ nav.scrolled {
 .lb-img-wrap img {
   max-width: 100%;
   max-height: 92vh;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
   display: block;
 }
@@ -1037,16 +1037,16 @@ nav.scrolled {
 /* Elegant Lightbox Watermark */
 .lb-watermark {
   position: absolute;
-  bottom: 18px;
-  right: 22px;
+  bottom: 20px;
+  right: 24px;
   font-family: var(--font-heading);
-  font-size: 0.85rem;
-  letter-spacing: 0.03em;
-  color: rgba(244, 241, 233, 0.6);
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  color: rgba(244, 241, 233, 0.65);
   pointer-events: none;
   user-select: none;
   z-index: 10;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+  text-shadow: 0 1px 4px rgba(0,0,0,0.85);
 }
 
 .lb-nav {
