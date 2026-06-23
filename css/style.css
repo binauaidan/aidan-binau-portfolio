@@ -1037,17 +1037,16 @@ nav.scrolled {
 /* Elegant Lightbox Watermark */
 .lb-watermark {
   position: absolute;
-  bottom: 20px;
-  right: 24px;
-  font-family: var(--font-condensed);
-  font-size: 0.75rem;
-  letter-spacing: 0.12em;
-  color: rgba(244, 241, 233, 0.65);
-  text-transform: uppercase;
+  bottom: 22px;
+  right: 26px;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  color: rgba(244, 241, 233, 0.55);
   pointer-events: none;
   user-select: none;
   z-index: 10;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
 }
 
 .lb-nav {

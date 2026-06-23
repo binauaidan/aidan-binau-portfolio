@@ -425,10 +425,10 @@ function renderLightboxImage(container, item) {
   // Protect the lightbox image from right-click
   protectImage(img);
 
-  // Elegant Watermark (appears in lightbox)
+  // Elegant Watermark / Logo (appears in lightbox)
   const watermark = document.createElement('div');
   watermark.className = 'lb-watermark';
-  watermark.textContent = '© Aidan Binau';
+  watermark.textContent = 'Aidan Binau';
   container.appendChild(watermark);
 }
 
