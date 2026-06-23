@@ -422,9 +422,6 @@ function renderLightboxImage(container, item) {
   
   container.appendChild(img);
 
-  // Protect the lightbox image from right-click
-  protectImage(img);
-
   // Elegant Watermark / Logo (appears in lightbox)
   const watermark = document.createElement('div');
   watermark.className = 'lb-watermark';
