@@ -466,6 +466,39 @@ nav.scrolled {
   padding: 5.25rem 0;
 }
 
+/* Experiences Section */
+#experiences {
+  padding: 5.25rem 0;
+  background: var(--surface);
+}
+
+.experiences-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 2.25rem;
+}
+
+.experiences-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.experience-item h3 {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+}
+
+.experience-item p {
+  color: var(--text-dim);
+  font-size: 1.02rem;
+  line-height: 1.7;
+  max-width: 52ch;
+}
+
 .portfolio-inner {
   max-width: 1800px;
   margin: 0 auto;
@@ -923,6 +956,22 @@ nav.scrolled {
   object-fit: cover;
   object-position: center;
   display: block;
+}
+
+/* Elegant Lightbox Watermark */
+.lb-watermark {
+  position: absolute;
+  bottom: 20px;
+  right: 24px;
+  font-family: var(--font-condensed);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  color: rgba(244, 241, 233, 0.65);
+  text-transform: uppercase;
+  pointer-events: none;
+  user-select: none;
+  z-index: 10;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
 
 .lb-nav {

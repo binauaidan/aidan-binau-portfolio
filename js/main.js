@@ -16,6 +16,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 1400);
   }
 
+  // ── Image Protection (Right-click + Drag) ─────────────
+  function protectImage(img) {
+    if (!img) return;
+
+    // Disable right-click context menu
+    img.addEventListener('contextmenu', e => e.preventDefault(), { passive: false });
+
+    // Disable dragging
+    img.addEventListener('dragstart', e => e.preventDefault());
+    img.setAttribute('draggable', 'false');
+
+    // Disable text selection
+    img.style.userSelect = 'none';
+    img.style.webkitUserSelect = 'none';
+    img.style.msUserSelect = 'none';
+  }
+
+  // Protect existing images on page load
+  document.querySelectorAll('.photo-item img, .about-img-main img, .about-img-sec img').forEach(protectImage);
+
   // ── Navbar Scroll Effect ──────────────────────────────
   const nav = document.getElementById('nav');
   let lastScroll = 0;
@@ -401,6 +421,15 @@ function renderLightboxImage(container, item) {
   img.alt = item.title || item.description || 'Full size photograph';
   
   container.appendChild(img);
+
+  // Protect the lightbox image from right-click
+  protectImage(img);
+
+  // Elegant Watermark (appears in lightbox)
+  const watermark = document.createElement('div');
+  watermark.className = 'lb-watermark';
+  watermark.textContent = '© Aidan Binau';
+  container.appendChild(watermark);
 }
 
 function updateLightboxThumbs(strip) {
