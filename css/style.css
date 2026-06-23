@@ -76,6 +76,23 @@ h2 { font-size: clamp(2.35rem, 5.5vw, 3.4rem); }
   color: var(--accent);
 }
 
+/* Thin gold line under main section titles */
+.section-title {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.75rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 52px;
+  height: 1px;
+  background: linear-gradient(to right, var(--accent), transparent);
+}
+
 p {
   max-width: 68ch;
 }
@@ -504,10 +521,37 @@ nav.scrolled {
   }
 }
 
+/* Experiences block inside About */
+.experiences-block {
+  margin-top: 2.75rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.experiences-subhead {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+.experiences-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem 2.5rem;
+}
+
+@media (max-width: 900px) {
+  .experiences-grid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+}
+
 .experience-item {
   background: var(--surface-2);
   border-left: 3px solid var(--accent);
-  padding: 1.5rem 1.25rem;
+  padding: 1.4rem 1.2rem;
   transition: all 0.3s ease;
 }
 
@@ -516,17 +560,17 @@ nav.scrolled {
   transform: translateY(-2px);
 }
 
-.experience-item h3 {
+.experience-item h4 {
   font-family: var(--font-heading);
-  font-size: 1.35rem;
-  margin-bottom: 0.85rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
   color: var(--text);
 }
 
 .experience-item p {
   color: var(--text-dim);
-  font-size: 1.0rem;
-  line-height: 1.7;
+  font-size: 0.98rem;
+  line-height: 1.65;
 }
 
 .portfolio-inner {
@@ -698,18 +742,18 @@ nav.scrolled {
 
 /* About Section */
 #about {
-  padding: 5.25rem 0;
+  padding: 4.5rem 0 5.5rem;
   background: var(--surface);
 }
 
 .about-inner {
-  max-width: 1220px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0 2.25rem;
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 4.5rem;
-  align-items: center;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 4rem;
+  align-items: start;
 }
 
 .about-images {
