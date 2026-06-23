@@ -485,7 +485,7 @@ nav.scrolled {
 
 /* Experiences Section */
 #experiences {
-  padding: 1.5rem 0 4.5rem;
+  padding: 2.5rem 0 5rem;
   background: var(--surface);
 }
 
@@ -742,7 +742,7 @@ nav.scrolled {
 
 /* About Section */
 #about {
-  padding: 4.5rem 0 5.5rem;
+  padding: 3.5rem 0 4rem;
   background: var(--surface);
 }
 
@@ -752,7 +752,7 @@ nav.scrolled {
   padding: 0 2.25rem;
   display: grid;
   grid-template-columns: 1fr 1.15fr;
-  gap: 4rem;
+  gap: 3.5rem;
   align-items: start;
 }
 
