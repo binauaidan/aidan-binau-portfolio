@@ -573,6 +573,14 @@ nav.scrolled {
   line-height: 1.65;
 }
 
+.experience-price {
+  margin-top: 1rem;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
 .portfolio-inner {
   max-width: 1800px;
   margin: 0 auto;
