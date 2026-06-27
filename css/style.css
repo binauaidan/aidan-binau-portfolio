@@ -569,16 +569,23 @@ nav.scrolled {
 
 .experience-item p {
   color: var(--text-dim);
-  font-size: 0.98rem;
-  line-height: 1.65;
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
 
 .experience-price {
-  margin-top: 1rem;
+  margin-top: 1.25rem;
   font-family: var(--font-heading);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: var(--accent);
   font-weight: 500;
+}
+
+.experience-item h3 {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  margin-bottom: 0.7rem;
+  color: var(--text);
 }
 
 .portfolio-inner {
